@@ -115,9 +115,10 @@ namespace MethodsExercise
 
     
 
-    // Bonus Methods        
+    /* Bonus Methods        
 
-        public static string HowManyTimes() {
+        public static string HowManyTimes()
+        {
             int i = 0;
             int sum1;
             int totalSum = 0;
@@ -142,7 +143,7 @@ namespace MethodsExercise
             }
             Console.WriteLine($"The total of the numbers that you entered is {totalSum}.");
         }
-
+    */
         
     }
 }
