@@ -24,16 +24,16 @@ namespace MethodsExercise
 
 
 
-            string str1 = "";
-            string str2 = "";
+            string str1 = MathSetUp1();
+            string str2 = MathSetUp2(); 
 
-            int num1 = 0;
-            int num2 = 0;
-            num1 = int.Parse(str1);
-            num2 = int.Parse(str2);
+            int num1 = int.Parse(str1);
+            int num2 = int.Parse(str2);
 
-            MathSetUp1();
-            MathSetUp2();
+
+
+            
+            
            
 
             int solveSum = num1 + num2;
@@ -49,8 +49,8 @@ namespace MethodsExercise
             Console.WriteLine($"Division: {num1} / {num2} equals {solveDivide}.\n");
             Console.WriteLine($"Modulus: {num1} % {num2} equals {solveMod}.\n");
 
-            string HowManyT = "";
-            HowManyTimes();
+            string HowManyTimes = "";
+            HowManyTimesF();
            
         }
 
@@ -61,7 +61,7 @@ namespace MethodsExercise
         public static string Greeting()
         {
             Console.WriteLine("What's your name?");
-           string  name = Console.ReadLine();
+            string  name = Console.ReadLine();
             Console.WriteLine($"Thanks {name}! Lets just go over a few more questions.");
             return name;
         }
@@ -115,16 +115,14 @@ namespace MethodsExercise
 
     
 
-    /* Bonus Methods        
+//  Bonus Methods        
 
-        public static string HowManyTimes()
+        public static void HowManyTimesF()
         {
-            int i = 0;
-            int sum1;
-            int totalSum = 0;
+            
             Console.WriteLine("***BONUS***BONUS***BONUS***");
             Console.WriteLine("pick a number");
-            HowManyT = Console.ReadLine();
+            string HowManyTimes = Console.ReadLine();
            
 
             int HowManyInt = int.Parse(HowManyTimes);
@@ -132,7 +130,9 @@ namespace MethodsExercise
 
 
 
-
+            int i = 0;
+            int sum1;
+            int totalSum = 0;
             while (i < HowManyInt)
             {
                 Console.WriteLine("Pick a number\n");
@@ -143,7 +143,7 @@ namespace MethodsExercise
             }
             Console.WriteLine($"The total of the numbers that you entered is {totalSum}.");
         }
-    */
+ 
         
     }
 }
