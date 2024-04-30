@@ -7,15 +7,15 @@ namespace MethodsExercise
     {
         static void Main(string[] args)
         {
-            string name = "";
-            string animal = "";
-            string color = "";
-            string band = "";
+            string name = Greeting();
+            string animal = FillInTheAnimal();
+            string color = FillInTheColor();
+            string band = FillInTheBand();
 
-            Greeting();
-            FillInTheColor();
-            FillInTheAnimal();
-            FillInTheBand();
+
+
+
+
 
             Console.WriteLine("Thanks for answerinmg my questions. Here's a little story we just made together,");
             Console.WriteLine($"Once upon a time in the enchanted substack, {name} the {animal} was checking his code for errors.");
